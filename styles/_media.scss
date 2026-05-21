@@ -1,0 +1,348 @@
+.about-container .left-about p {
+    padding-left: 0;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media screen and (max-width: 600px) {
+
+    header {
+        padding: 0 !important;
+    }
+
+    section {
+        padding: 2rem 1.5rem;
+    }
+
+    .theme-btn {
+        width: 50px;
+        height: 50px;
+        top: 2%;
+        right: 4%;
+    }
+
+    .header-content {
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    .left-header {
+
+        .h-shape {
+            display: none;
+        }
+
+        .image {
+            width: 92% !important;
+            height: auto !important;
+            margin: 2rem auto 0 auto !important;
+        }
+    }
+
+    .right-header {
+        grid-row: 1;
+        width: 100%;
+        padding-right: 0 !important;
+        margin: 0 auto;
+        text-align: center;
+
+        .name {
+            font-size: 2.4rem !important;
+            line-height: 1.3;
+            padding-top: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.8rem;
+        }
+    }
+
+    /* Controls */
+    .controls {
+        top: auto;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        background: rgba(15, 23, 42, 0.95);
+        backdrop-filter: blur(12px);
+        padding: 0.5rem 0;
+
+        .control {
+            margin: 0.5rem 0.3rem;
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    /* About */
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+
+        .left-about {
+            padding-right: 0;
+
+            h4 {
+                font-size: 1.6rem;
+            }
+
+            p {
+                padding-left: 0;
+                line-height: 1.8rem;
+            }
+        }
+
+        .right-about {
+            grid-template-columns: 1fr;
+            padding-top: 1rem;
+        }
+    }
+
+    /* Stats */
+    .about-stats {
+
+        .progress-bars {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /* Timeline */
+    .timeline {
+        grid-template-columns: 1fr;
+        padding-bottom: 5rem;
+
+        .timeline-item {
+            padding: 1.5rem 1.2rem 1.5rem 3rem;
+        }
+    }
+
+    /* Portfolio */
+    .portfolios {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding-bottom: 5rem;
+        margin-top: 1rem;
+    }
+
+    /* Contact */
+    .contact-content-con {
+        flex-direction: column;
+
+        .right-contact {
+            margin-left: 0;
+            margin-top: 2rem;
+            margin-bottom: 5rem;
+        }
+    }
+
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 1rem 0;
+
+        p,
+        span {
+            font-size: 14px;
+        }
+
+        .icon {
+            grid-template-columns: 25px 1fr;
+        }
+    }
+
+    /* Titles */
+    .main-title {
+
+        h2 {
+            font-size: 2.2rem;
+
+            span {
+                font-size: 2.2rem;
+            }
+
+            .bg-text {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+/* =========================
+   LARGE TABLETS
+========================= */
+@media screen and (max-width: 1432px) {
+
+    .container {
+        padding: 6rem 8rem;
+    }
+
+    .contact-content-con {
+        flex-direction: column;
+
+        .right-contact {
+            margin-left: 0;
+            margin-top: 2rem;
+            margin-bottom: 5rem;
+        }
+    }
+
+    .main-title h2 .bg-text {
+        font-size: 5rem;
+    }
+}
+
+/* =========================
+   TABLETS
+========================= */
+@media screen and (max-width: 1250px) {
+
+    .portfolios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header-content .right-header {
+        padding-right: 6rem;
+    }
+}
+
+/* =========================
+   SMALL TABLETS
+========================= */
+@media screen and (max-width: 1070px) {
+
+    .about-container {
+        grid-template-columns: 1fr;
+
+        .right-about {
+            padding-top: 2rem;
+        }
+    }
+
+    .main-title h2 {
+        font-size: 3.5rem;
+
+        span {
+            font-size: 3.5rem;
+        }
+
+        .bg-text {
+            font-size: 4rem;
+        }
+    }
+}
+
+/* =========================
+   MOBILE/TABLET MIX
+========================= */
+@media screen and (max-width: 970px) {
+
+    .container {
+        padding: 6rem 4rem;
+    }
+
+    .about-container .left-about {
+        padding-right: 0;
+    }
+
+    .header-content {
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    .left-header {
+
+        .h-shape {
+            display: none;
+        }
+
+        .image {
+            width: 90% !important;
+            margin: 0 auto !important;
+        }
+    }
+
+    .right-header {
+        grid-row: 1;
+        padding-right: 0 !important;
+        width: 90%;
+        margin: 0 auto;
+
+        .name {
+            font-size: 2.6rem !important;
+            text-align: center;
+            padding-top: 2rem;
+        }
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+@media screen and (max-width: 700px) {
+
+    .container {
+        padding: 6rem 2rem;
+    }
+
+    .about-stats .progress-bars {
+        grid-template-columns: 1fr;
+    }
+
+    .about-container .right-about {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolios {
+        grid-template-columns: 1fr;
+    }
+
+    .main-title h2 {
+
+        font-size: 2.7rem;
+
+        span {
+            font-size: 2.7rem;
+        }
+
+        .bg-text {
+            font-size: 3.2rem;
+        }
+    }
+}
+
+/* =========================
+   VERY SMALL DEVICES
+========================= */
+@media screen and (max-width: 450px) {
+
+    .right-header .name {
+        font-size: 2rem !important;
+    }
+
+    .main-title h2 {
+
+        font-size: 2rem;
+
+        span {
+            font-size: 2rem;
+        }
+
+        .bg-text {
+            font-size: 2.3rem;
+        }
+    }
+
+    .controls .control {
+        width: 45px;
+        height: 45px;
+    }
+}
